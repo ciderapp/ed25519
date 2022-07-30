@@ -4,7 +4,7 @@
   "description": "An Ed25519 elliptic-curve cryptography implementation for Node.js",
   "dependencies": {
     "bindings": "^1.5.0",
-    "nan": "^2.14.1",
+    "nan": "^2.16.0",
     "run-script-os": "^1.1.6",
     "prebuild-install": "^7.1.0"
   },
