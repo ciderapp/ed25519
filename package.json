@@ -16,7 +16,7 @@
     "build-binaries-electron:linux": "prebuild --platform linux --include-regex \"^.*\\.(node|dylib|lib|exp|dll|so(\\.[0-9])?)$\" -r electron -t 19.0.3 -t 18.3.3",
     "build-binaries-electron:darwin": "prebuild --platform darwin --include-regex \"^.*\\.(node|dylib|lib|exp|dll|so(\\.[0-9])?)$\" -r electron -t 19.0.3 -t 18.3.3",
     "build-binaries-electron2": "prebuild --platform darwin -a arm64 --include-regex \"^.*\\.(node|dylib|lib|exp|dll|so(\\.[0-9])?)$\" -r electron -t 19.0.3 -t 18.3.3",  
-    "install": "prebuild-install --runtime=electron --target=19.0.2 || npm run rebuild",
+    "install": "prebuild-install || npm run rebuild",
     "rebuild": "node-gyp configure build",
     "test": "mocha"
   },
